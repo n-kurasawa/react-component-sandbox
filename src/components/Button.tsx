@@ -16,4 +16,4 @@ function SecondaryBtn({children}) {
 export {
   Button,
   SecondaryBtn
-}
+};

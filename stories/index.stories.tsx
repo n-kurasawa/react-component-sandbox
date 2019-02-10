@@ -1,12 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { withInfo } from '@storybook/addon-info';
-
 import { Button, Welcome } from '@storybook/react/demo';
+
+import { Button as Btn, SecondaryBtn } from "../src/components/Button";
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -18,4 +18,11 @@ storiesOf('Button', module)
         😀 😎 👍 💯
       </span>
     </Button>
+  ))
+  .add('Secondary', () => (
+      <>
+        <SecondaryBtn>Secondary</SecondaryBtn>
+        <Btn name="btn-primary">Primary</Btn>
+      </>
   ));
+
