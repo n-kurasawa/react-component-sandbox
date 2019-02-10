@@ -1,5 +1,6 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+import "../vendor/css/beagle.css"
 
 addDecorator(withInfo);
 
